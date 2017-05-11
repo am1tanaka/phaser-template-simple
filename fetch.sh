@@ -1,5 +1,6 @@
-#!bin/bash
+#!/bin/bash
 
-wget -O ./_site/js/phaser.min.js https://raw.githubusercontent.com/photonstorm/phaser-ce/master/build/phaser.min.js
+wget --no-check-certificate -O ./_site/js/phaser.min.js https://raw.githubusercontent.com/photonstorm/phaser-ce/master/build/phaser.min.js
 
-wget -O ./_site/assets/images/baddie.png https://github.com/photonstorm/phaser-ce/raw/master/resources/tutorials/02%20Making%20your%20first%20game/assets/baddie.png
+wget --no-check-certificate -N -R png -nH -P _site/assets/images --cut-dirs=8 -i _site/assets/image-list.txt
+wget --no-check-certificate -N -R png -nH -P _site/assets/sounds --cut-dirs=2 -i _site/assets/sound-list.txt

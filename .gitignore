@@ -35,3 +35,10 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Project Files
+_site/assets/images/*.png
+_site/js/*.js
+_site/assets/sounds/*.wav
+_site/assets/sounds/*.mp3
+_site/assets/sounds/*.ogg
