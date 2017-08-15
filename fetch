@@ -4,3 +4,6 @@ wget --no-check-certificate -O ./_site/js/vendor/phaser.min.js https://raw.githu
 
 wget --no-check-certificate -N -R png -nH -P _site/assets/images --cut-dirs=8 -i _site/assets/image-list.txt
 wget --no-check-certificate -N -R png -nH -P _site/assets/sounds --cut-dirs=2 -i _site/assets/sound-list.txt
+
+mkdir ./node_modules/tern-phaser
+wget --no-check-certificate -O ./node_modules/tern-phaser/phaser.js https://raw.githubusercontent.com/am1tanaka/tern-phaser/master/phaser.js
